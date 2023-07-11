@@ -12,7 +12,7 @@
 </head>
 <body>
     <div id="app">
-        {{hello}}
+        {{ciao}}
     </div>
 <script type="text/javascript" src= "./js/script.js"></script>
 </body>

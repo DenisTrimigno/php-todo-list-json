@@ -3,7 +3,7 @@ const { createApp } = Vue;
 createApp ({
     data() {
         return {
-            hello: 'hello world'
+            ciao: 'hello world'
         }
     }
 }).mount('#app');
