@@ -19,9 +19,22 @@
                         <div class="col-12">
                             <h1 class="display-1 text-muted">Todo list</h1>
                             <ul class="list-group list-group-flush border border-1 rounted">
-                                <li v-for="(item, index) in todoList" : key="index"
+                                <li v-for="(item, index) in todoList" :key="index"
                                 class="list-group-item">{{ item }}</li>
                             </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="input-group mb-3">
+                                <input type="text" @key.enter="updateList" v-model="todoItem" 
+                                       placeholder="todo" class="form-control">
+                                       <button @click="updateList" class="btn btn-outline-success" id= "button-add"> Aggiungi</button>
+                            </div>
                         </div>
                     </div>
                 </div>
