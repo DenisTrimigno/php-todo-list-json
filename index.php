@@ -11,8 +11,22 @@
     <title>Todo-list-json</title>
 </head>
 <body>
-    <div id="app">
-        {{ciao}}
+    <div class="wrapper">
+        <div id="app">
+            <section class="py-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1 class="display-1 text-muted">Todo list</h1>
+                            <ul class="list-group list-group-flush border border-1 rounted">
+                                <li v-for="(item, index) in todoList" : key="index"
+                                class="list-group-item">{{ item }}</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
     </div>
 <script type="text/javascript" src= "./js/script.js"></script>
 </body>
