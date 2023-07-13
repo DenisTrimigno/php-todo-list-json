@@ -20,7 +20,8 @@
                             <h1 class="display-1 text-muted">Todo list</h1>
                             <ul class="list-group list-group-flush border border-1 rounted">
                                 <li v-for="(item, index) in todoList" :key="index"
-                                class="list-group-item">{{ item }}</li>
+                                class="list-group-item">{{ item.text }}
+                               </li>
                             </ul>
                         </div>
                     </div>
